@@ -11,3 +11,4 @@ cabal.sandbox.config
 cabal.config
 site_key.txt
 log/
+users.json

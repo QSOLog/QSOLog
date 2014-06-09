@@ -1,26 +1,30 @@
-html {
-   padding: 0;
-   margin: 0;
-   background-color: #ffffff;
-   font-family: Verdana, Helvetica, sans-serif;
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700,300');
+
+html, body, h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif !important;
 }
-body {
-   padding: 0;
-   margin: 0;
+
+.navbar {
+    margin-bottom: 0;
 }
-a {
-   text-decoration: underline;
+
+.navbar li.first {
+    border-top: 2px solid #5399D6;
 }
-a :hover {
-   cursor: pointer;
-   text-decoration: underline;
+
+.navbar li.second {
+    border-top: 2px solid #F0AD4E;
 }
-img {
-   border: none;
+
+.navbar li.third {
+    border-top: 2px solid #D9534F;
 }
-#content {
-   padding-left: 1em;
+
+.navbar li.fourth {
+    border-top: 2px solid #B85C5C;
 }
-#info {
-   font-size: 60%;
+
+.qsolog-intro {
+    background-color: #5eb95e;
+    color: #f7f7f7;
 }

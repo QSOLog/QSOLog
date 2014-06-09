@@ -58,13 +58,19 @@ handleNewUser = method GET handleForm <|> method POST handleFormSubmit
     handleForm = render "new_user"
     handleFormSubmit = registerUser "login" "password" >> redirect "/"
 
+------------------------------------------------------------------------------
+-- | Shows a listing of available logs for the user.
+handleViewLogs :: Handler App (AuthManager App) ()
+handleViewLogs = render "logs"
+
 
 ------------------------------------------------------------------------------
 -- | The application's routes.
 routes :: [(ByteString, Handler App App ())]
 routes = [ ("/login",    with auth handleLoginSubmit)
          , ("/logout",   with auth handleLogout)
-         , ("/new_user", with auth handleNewUser)
+         , ("/signup",   with auth handleNewUser)
+         , ("/logs",     with auth handleViewLogs)
          , ("",          serveDirectory "static")
          ]
 
