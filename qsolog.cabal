@@ -1,10 +1,10 @@
 Name:                qsolog
 Version:             0.1
-Synopsis:            Project Synopsis Here
-Description:         Project Description Here
-License:             AllRightsReserved
-Author:              Author
-Maintainer:          maintainer@example.com
+Synopsis:            A modern, open source, working, ham radio contact logging system
+Description:         QSOLog is a web-based system for logging contacts made via amateur radio.
+License:             BSD2
+Author:              Ricky Elrod
+Maintainer:          relrod@haskell.org
 Stability:           Experimental
 Category:            Web
 Build-type:          Simple
