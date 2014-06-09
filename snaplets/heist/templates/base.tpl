@@ -72,6 +72,20 @@
       <apply-content/>
     </div>
 
+    <footer>
+      <div class="container">
+        <hr />
+        <span>
+          &copy; 2014 The QSOLog Team
+        </span>
+        <span class="pull-right">
+          <a href="https://github.com/qsolog/">
+            QSOLog* is open source software.
+          </a>
+        </span>
+      </div>
+    </footer>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </body>
