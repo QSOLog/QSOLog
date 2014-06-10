@@ -1,8 +1,10 @@
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700,300');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Roboto');
 
 html, body, h1, h2, h3, h4, h5 {
     font-family: 'Open Sans', sans-serif !important;
 }
+
+.notopmargin { margin-top: 0; }
 
 .navbar {
     margin-bottom: 0;
@@ -27,4 +29,26 @@ html, body, h1, h2, h3, h4, h5 {
 .qsolog-intro {
     background-color: #5eb95e;
     color: #f7f7f7;
+}
+
+.top20 { margin-top: 20px; }
+
+#loginform input, #index #loginform input {
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
 }

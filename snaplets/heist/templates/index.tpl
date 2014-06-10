@@ -22,6 +22,31 @@
 
     <div class="container">
       <div class="row">
+        <div class="col-md-6">
+          <div id="loginform">
+            <ifLoggedIn>
+              <p>
+                This is a simple demo page served using
+                <a href="http://snapframework.com/docs/tutorials/heist">Heist</a>
+                and the <a href="http://snapframework.com/">Snap</a> web framework.
+              </p>
+
+              <p>Congrats!  You're logged in as '<loggedInUser/>'</p>
+
+              <p><a href="/logout">Logout</a></p>
+            </ifLoggedIn>
+
+            <ifLoggedOut>
+              <h1 class="notopmargin">Log in to your account</h1>
+              <apply template="_login"/>
+            </ifLoggedOut>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
         <div class="col-md-4">
           <h2>Modern.</h2>
           <p class="text-justify">
@@ -61,24 +86,6 @@
           </p>
         </div>
       </div>
-
-      <hr />
-
-      <ifLoggedIn>
-        <p>
-          This is a simple demo page served using
-          <a href="http://snapframework.com/docs/tutorials/heist">Heist</a>
-          and the <a href="http://snapframework.com/">Snap</a> web framework.
-        </p>
-
-        <p>Congrats!  You're logged in as '<loggedInUser/>'</p>
-
-        <p><a href="/logout">Logout</a></p>
-      </ifLoggedIn>
-
-      <ifLoggedOut>
-        <apply template="_login"/>
-      </ifLoggedOut>
     </div>
   </div>
 
