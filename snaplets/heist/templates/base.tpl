@@ -21,17 +21,24 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <ifLoggedIn>
-              <li class="first">
-                <a href="/contact">
-                  <i class="fa fa-plus"></i> New contact
+              <li class="first dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-plus"></i> New <b class="caret"></b>
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/contacts/new">
+                      <i class="fa fa-bullhorn"></i> Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/logs/new">
+                      <i class="fa fa-edit"></i> Log
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="second">
-                <a href="/logs">
-                  <i class="fa fa-edit"></i> Logs
-                </a>
-              </li>
-              <li class="fourth dropdown">
+              <li class="second dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="http://cdn.libravatar.org/avatar/66c14e4f10ef7a6671e5e2e31e212f1b?s=16"
                        alt="<loggedInUser/>'s avatar">
