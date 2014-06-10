@@ -63,6 +63,12 @@ handleNewUser = method GET handleForm <|> method POST handleFormSubmit
 handleViewLogs :: Handler App (AuthManager App) ()
 handleViewLogs = render "logs"
 
+------------------------------------------------------------------------------
+-- | Handle showing a profile for a user.
+handleViewProfile :: Handler App (AuthManager App) ()
+handleViewProfile = do
+  callsign <- getParam "callsign"
+  render "profile"
 
 ------------------------------------------------------------------------------
 -- | The application's routes.
@@ -71,6 +77,7 @@ routes = [ ("/login",    with auth handleLoginSubmit)
          , ("/logout",   with auth handleLogout)
          , ("/signup",   with auth handleNewUser)
          , ("/logs",     with auth handleViewLogs)
+         , ("/profile/:callsign", with auth handleViewProfile)
          , ("",          serveDirectory "static")
          ]
 

@@ -4,7 +4,11 @@ html, body, h1, h2, h3, h4, h5 {
     font-family: 'Open Sans', sans-serif !important;
 }
 
+#content { margin-top: 20px; }
+
 .notopmargin { margin-top: 0; }
+.left10 { margin-left: 10px; }
+.right10 { margin-right: 10px; }
 
 .navbar {
     margin-bottom: 0;
@@ -51,4 +55,8 @@ html, body, h1, h2, h3, h4, h5 {
     position: absolute;
     padding: 10px 12px;
     pointer-events: none;
+}
+
+#profile h2.callsign {
+    color: #666;
 }
